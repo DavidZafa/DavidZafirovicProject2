@@ -1,9 +1,9 @@
 **MODELS**
 
-C- Creating user profile
-R- Breads looked at/Purchased
-U- Adding things to Cart
-D- Favorite Breads/Items in Cart
+C- Creating user profile<br/>
+R- Breads looked at/Purchased<br/>
+U- Adding things to Cart<br/>
+D- Favorite Breads/Items in Cart<br/>
 
 
 User {
@@ -15,7 +15,7 @@ Viewed: {
 
   }
 }
-
+<br/>
   Cart: {
 
   },
