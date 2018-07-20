@@ -1,8 +1,8 @@
-**Wireframe*
+**Wireframe**
 
 
 **This First Image is of the layout for everything**
-![alt text](IMG_0324.jpg)
+![alt text](Wireframe/IMG_0324.jpg)
 
 **The second image is of the user profile page**
 ![alt text](IMG_0326.jpg)
