@@ -8,9 +8,11 @@ User {
   },
 Viewed: {
 
-  },
+  }
+}
+
   Cart: {
-    
+
   },
   Purchased: {
 
