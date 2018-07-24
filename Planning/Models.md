@@ -13,10 +13,19 @@ User {
   },
 Viewed: {
 
+  ref: [Bread]
   }
 }
-<br/>
-  Cart: {
+
+Bread {
+
+  name
+  description
+   path img
+},
+
+
+Cart: {
 
   },
   Purchased: {
@@ -24,4 +33,35 @@ Viewed: {
     ref: "Cart"
   }
 
+}
+
+
+
+Routes
+app.js
+user.js
+index.js
+
+module.exports {
+
+  show:
+  user.findOne
+  populatePath: "Viewed"
+  populatePath: "Purchased"
+},
+
+login: {
+    createLogin
+},
+
+signUp{
+
+
+  createSignup{
+
+  },
+}
+logout{
+
+}
 }
