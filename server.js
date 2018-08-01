@@ -15,7 +15,7 @@ var configDB = require('./config/database.js')
 
 mongoose.connect(configDB.url)
 
-// require('./config/passport.js')(passport)
+require('./config/passport.js')(passport)
 
 
 app.use(morgan('dev'))
@@ -26,17 +26,17 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.set('view engine', 'ejs')
 
 
-// app.use(session({
-//     secret: 'memes',
-//     resave: true,
-//     saveUninitialized: true
-// }))
-// app.use(passport.initialize())
-// app.use(passport.session())
-// app.use(flash())
-//
-//
-// require('./app/routes/user.js')(app, passport)
+app.use(session({
+    secret: 'memes',
+    resave: true,
+    saveUninitialized: true
+}))
+app.use(passport.initialize())
+app.use(passport.session())
+app.use(flash())
+
+
+require('./app/routes/user.js')(app, passport)
 
 app.listen(port)
 console.log('The magic happens on port ' + port)
