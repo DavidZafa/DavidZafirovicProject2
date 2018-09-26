@@ -5,7 +5,7 @@ var port     = process.env.PORT || 8080
 var mongoose = require('mongoose')
 var passport = require('passport')
 var flash    = require('connect-flash')
-
+var hbs = require("hbs");
 var morgan       = require('morgan')
 var cookieParser = require('cookie-parser')
 var bodyParser   = require('body-parser')
@@ -15,7 +15,7 @@ var configDB = require('./config/database.js')
 
 mongoose.connect(configDB.url)
 
-require('./config/passport.js')(passport)
+require('./config/passport')(passport)
 
 
 app.use(morgan('dev'))
